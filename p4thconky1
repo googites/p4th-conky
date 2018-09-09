@@ -49,14 +49,16 @@ draw_borders no
 draw_graph_borders no
 show_graph_range yes
 
-# Red
-color2 CD5C5C
-# White
-color3 FFFFFF
-# Verde
-color4 20B2AA
-# Arancio
-color5 FFA07A
+# numbers and manifest
+color2 aab3b1
+#white 
+#color3 b5c0be
+color3 aab3b1
+# bars
+color4 404B4D
+# letters tasks 
+color5 01564A
+
 
 
 #Loading lua script for drawning rings
@@ -66,10 +68,10 @@ color5 FFA07A
 ## System information using conky capabilities
 
 TEXT
-${color4}┌────────────────────┐
+${#000000}┌────────────────────┐
 │${offset 5}${font Monospace:normal:size=10}${color5}SYSTEM: $nodename${offset 3}${color4}      ├────────────────────┐
 ${color4}└────────────────────┘                    │
-${offset 15}${font Monospace:normal:size=10}${color5}Architecture: ${color4}MANJARO 1.7.0 ${offset 9}   ────────┤
+${offset 15}${font Monospace:normal:size=10}${color5}Architecture: ${color4}ARCH LINUX 4.18.5 ${offset 9}   ────────┤
 ${offset 15}${font Monospace:normal:size=10}${color5}Local Time: ${color4}$time${offset 9}──────┘ │                
 ${offset 336}│
 ${offset 32}┌─────────────────────────────────────┘
@@ -80,7 +82,7 @@ ${offset 32}│
 ┌┤ ${font Monospace:normal:size=10}${color5}CPU${color4} │
 │└─────┘
 │
-├── ${font Ubuntu:normal:size=9}${color2}CPU ${if_existing /sys/class/hwmon/hwmon0/temp1_input}${hwmon 0 temp 1}°C${else}${if_existing /sys/class/hwmon/hwmon1/temp1_input}${hwmon 1 temp 1}°C${else}temp not detected${endif}{else}temp not detected${endif}${if_existing /sys/class/hwmon/hwmon1/temp2_input} -  GPU ${hwmon 1 temp 2}°C${else} - GPU temp not detected${endif}
+├── ${font Ubuntu:normal:size=9}${color2}CPU ${if_existing /sys/class/hwmon/hwmon0/temp1_input}${hwmon 0 temp 1}°C${else}${if_existing /sys/class/hwmon/hwmon1/temp1_input}${hwmon 1 temp 1}°C${else}temp not detected${endif}{else}temp not detected${endif}${if_existing /sys/class/hwmon/hwmon1/temp2_input} -  GPU ${hwmon 1 temp 2}°C${else} - 35°C${endif}
 # Showing TOP 5 CPU-consumers
 ${font Monospace:normal:size=10}${color4}│
 ${font Monospace:normal:size=10}${color4}├───────── ${font Monospace:normal:size=10}${color5}${top name 1}${alignr}${color2}${top cpu 1}%
@@ -105,23 +107,23 @@ ${color4}${offset 40}└────┤ ${color5}HACKER'S MANIFESTO${color4}${of
 ${color4}          └─────────┬──────────┘  
 ${color4}                    │ 
 ${color4}┌─────────────────────────────────────────┐
-${color4}│${color2} We explore... and you call us criminals.${color4}│
-${color4}│${color2} We seek after knowledge... and you call${color4} │
-${color4}│${color2} us criminals. We exist without skin${color4}     │
-${color4}│${color2} color, without nationality, without ${color4}    │
-${color4}│${color2} religious bias... and you call us${color4}       │
-${color4}│${color2} criminals. You build atomic bombs, you ${color4} │
-${color4}│${color2} wage wars, murder, cheat, and lie to us ${color4}│
-${color4}│${color2} and try to make us believe it's for our${color4} │ 
-${color4}│${color2} own good, yet we're the criminals.${color4}      │
-${color4}│${color2} Yes I am a criminal. My crime is that${color4}   │
-${color4}│${color2} of curiosity. My crime is that of${color4}       │
-${color4}│${color2} judging people by what they say and ${color4}    │
-${color4}│${color2} think, not what they look like. My${color4}      │
-${color4}│${color2} crime is that of outsmarting you, ${color4}      │
-${color4}│${color2} something that you will never forgive${color4}   │
-${color4}│${color2} me. I am a hacker, and this is my${color4}       │
-${color4}│${color2} manifesto. You may stop this ${color4}           │
-${color4}│${color2} individual, but you can't stop us${color4}       │
-${color4}│${color2} all...after all, we're all alike.${color4}       │
+${color4}│${color3} We explore... and you call us criminals.${color4}│
+${color4}│${color3} We seek after knowledge... and you call${color4} │
+${color4}│${color3} us criminals. We exist without skin${color4}     │
+${color4}│${color3} color, without nationality, without ${color4}    │
+${color4}│${color3} religious bias... and you call us${color4}       │
+${color4}│${color3} criminals. You build atomic bombs, you ${color4} │
+${color4}│${color3} wage wars, murder, cheat, and lie to us ${color4}│
+${color4}│${color3} and try to make us believe it's for our${color4} │ 
+${color4}│${color3} own good, yet we're the criminals.${color4}      │
+${color4}│${color3} Yes I am a criminal. My crime is that${color4}   │
+${color4}│${color3} of curiosity. My crime is that of${color4}       │
+${color4}│${color3} judging people by what they say and ${color4}    │
+${color4}│${color3} think, not what they look like. My${color4}      │
+${color4}│${color3} crime is that of outsmarting you, ${color4}      │
+${color4}│${color3} something that you will never forgive${color4}   │
+${color4}│${color3} me. I am a hacker, and this is my${color4}       │
+${color4}│${color3} manifesto. You may stop this ${color4}           │
+${color4}│${color3} individual, but you can't stop us${color4}       │
+${color4}│${color3} all...after all, we're all alike.${color4}       │
 ${color4}└─────────────────────────────────────────┘ 
