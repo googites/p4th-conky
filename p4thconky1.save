@@ -23,7 +23,7 @@ use_xft yes
 xftfont caviar dreams:size=10
 xftalpha 0.5
 uppercase yes
-ximerama_head = n
+display
 
 gap_x 40
 gap_y 70
@@ -51,14 +51,14 @@ draw_graph_borders no
 show_graph_range yes
 
 # numbers and manifest
-color2 ffffff
+color2 aab3b1
 #white 
 #color3 b5c0be
-color3 ffffff
+color3 aab3b1
 # bars
-color4 ffffff
+color4 404B4D
 # letters tasks 
-color5 ffffff
+color5 01564A
 
 
 
@@ -69,7 +69,7 @@ color5 ffffff
 ## System information using conky capabilities
 
 TEXT
-${#ffffff}┌────────────────────┐
+${#000000}┌────────────────────┐
 │${offset 5}${font Monospace:normal:size=10}${color5}SYSTEM: $nodename${offset 3}${color4}      ├────────────────────┐
 ${color4}└────────────────────┘                    │
 ${offset 15}${font Monospace:normal:size=10}${color5}Architecture: ${color4}ARCH LINUX 4.18.5 ${offset 9}   ────────┤
@@ -104,26 +104,27 @@ ${color4}${offset 40}│      └──────── ${font Monospace:norma
 ${color4}${offset 40}│        └──────── ${font Monospace:normal:size=10}${color5}${top_mem name 4}${color2}${alignr}${top_mem mem 5}%
 ${color4}     │
 ${color4}     │    ┌────────────────────┐
-${color4}${offset 40}└────┤${color5}COMMUNIST MANIFESTO${color4}${offset 8}│
+${color4}${offset 40}└────┤ ${color5}HACKER'S MANIFESTO${color4}${offset 8}│
 ${color4}          └─────────┬──────────┘  
 ${color4}                    │ 
 ${color4}┌─────────────────────────────────────────┐
-${color4}│${color3} Communism deprives no man of the power ${color4} │
-${color4}│${color3} to appropriate the products of society${color4}  │
-${color4}│${color3} all that it does is to deprive him of${color4}   │
-${color4}│${color3} the power to subjugate the labor of${color4}     │
-${color4}│${color3} others by means of such appropriation.${color4}  │
-${color4}│${color3} It has been objected, that upon the${color4}     │
-${color4}│${color3} abolition of private property all work ${color4} │ 
-${color4}│${color3} will cease, and universal laziness will${color4} │
-${color4}│${color3} overtake us. According to this,         ${color4}│
-${color4}│${color3} bourgeois society ought long ago to have${color4}│
-${color4}│${color3} gone to the dogs through sheer idleness;${color4}│
-${color4}│${color3} for those of its members who work,${color4}      │
-${color4}│${color3} acquire nothing, and those who acquire ${color4} │
-${color4}│${color3} anything, do not work. Let the ruling${color4}   │
-${color4}│${color3} tremble at a Communistic revolution.${color4}    │
-${color4}│${color3} The proletarians have nothing to lose${color4}   │
-${color4}│${color3} but their chains. They have a world to ${color4} │
-${color4}│${color3} win. Workingmen of all countries unite!${color4} │
+${color4}│${color3} We explore... and you call us criminals.${color4}│
+${color4}│${color3} We seek after knowledge... and you call${color4} │
+${color4}│${color3} us criminals. We exist without skin${color4}     │
+${color4}│${color3} color, without nationality, without ${color4}    │
+${color4}│${color3} religious bias... and you call us${color4}       │
+${color4}│${color3} criminals. You build atomic bombs, you ${color4} │
+${color4}│${color3} wage wars, murder, cheat, and lie to us ${color4}│
+${color4}│${color3} and try to make us believe it's for our${color4} │ 
+${color4}│${color3} own good, yet we're the criminals.${color4}      │
+${color4}│${color3} Yes I am a criminal. My crime is that${color4}   │
+${color4}│${color3} of curiosity. My crime is that of${color4}       │
+${color4}│${color3} judging people by what they say and ${color4}    │
+${color4}│${color3} think, not what they look like. My${color4}      │
+${color4}│${color3} crime is that of outsmarting you, ${color4}      │
+${color4}│${color3} something that you will never forgive${color4}   │
+${color4}│${color3} me. I am a hacker, and this is my${color4}       │
+${color4}│${color3} manifesto. You may stop this ${color4}           │
+${color4}│${color3} individual, but you can't stop us${color4}       │
+${color4}│${color3} all...after all, we're all alike.${color4}       │
 ${color4}└─────────────────────────────────────────┘ 
